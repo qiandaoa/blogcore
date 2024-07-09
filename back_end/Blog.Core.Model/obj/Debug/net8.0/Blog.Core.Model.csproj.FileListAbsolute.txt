@@ -1,0 +1,11 @@
+E:\Blog\back_end\Blog.Core.Model\bin\Debug\net8.0\Blog.Core.Model.deps.json
+E:\Blog\back_end\Blog.Core.Model\bin\Debug\net8.0\Blog.Core.Model.dll
+E:\Blog\back_end\Blog.Core.Model\bin\Debug\net8.0\Blog.Core.Model.pdb
+E:\Blog\back_end\Blog.Core.Model\obj\Debug\net8.0\Blog.Core.Model.GeneratedMSBuildEditorConfig.editorconfig
+E:\Blog\back_end\Blog.Core.Model\obj\Debug\net8.0\Blog.Core.Model.AssemblyInfoInputs.cache
+E:\Blog\back_end\Blog.Core.Model\obj\Debug\net8.0\Blog.Core.Model.AssemblyInfo.cs
+E:\Blog\back_end\Blog.Core.Model\obj\Debug\net8.0\Blog.Core.Model.csproj.CoreCompileInputs.cache
+E:\Blog\back_end\Blog.Core.Model\obj\Debug\net8.0\Blog.Core.Model.dll
+E:\Blog\back_end\Blog.Core.Model\obj\Debug\net8.0\refint\Blog.Core.Model.dll
+E:\Blog\back_end\Blog.Core.Model\obj\Debug\net8.0\Blog.Core.Model.pdb
+E:\Blog\back_end\Blog.Core.Model\obj\Debug\net8.0\ref\Blog.Core.Model.dll

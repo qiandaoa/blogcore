@@ -1,0 +1,15 @@
+E:\Blog\back_end\Blog.Core.IRepository\bin\Debug\net8.0\Blog.Core.IRepository.deps.json
+E:\Blog\back_end\Blog.Core.IRepository\bin\Debug\net8.0\Blog.Core.IRepository.dll
+E:\Blog\back_end\Blog.Core.IRepository\bin\Debug\net8.0\Blog.Core.IRepository.pdb
+E:\Blog\back_end\Blog.Core.IRepository\obj\Debug\net8.0\Blog.Core.IRepository.GeneratedMSBuildEditorConfig.editorconfig
+E:\Blog\back_end\Blog.Core.IRepository\obj\Debug\net8.0\Blog.Core.IRepository.AssemblyInfoInputs.cache
+E:\Blog\back_end\Blog.Core.IRepository\obj\Debug\net8.0\Blog.Core.IRepository.AssemblyInfo.cs
+E:\Blog\back_end\Blog.Core.IRepository\obj\Debug\net8.0\Blog.Core.IRepository.csproj.CoreCompileInputs.cache
+E:\Blog\back_end\Blog.Core.IRepository\obj\Debug\net8.0\Blog.Core.IRepository.dll
+E:\Blog\back_end\Blog.Core.IRepository\obj\Debug\net8.0\refint\Blog.Core.IRepository.dll
+E:\Blog\back_end\Blog.Core.IRepository\obj\Debug\net8.0\Blog.Core.IRepository.pdb
+E:\Blog\back_end\Blog.Core.IRepository\obj\Debug\net8.0\ref\Blog.Core.IRepository.dll
+E:\Blog\back_end\Blog.Core.IRepository\bin\Debug\net8.0\Blog.Core.Model.dll
+E:\Blog\back_end\Blog.Core.IRepository\bin\Debug\net8.0\Blog.Core.Model.pdb
+E:\Blog\back_end\Blog.Core.IRepository\obj\Debug\net8.0\Blog.Core.IRepository.csproj.AssemblyReference.cache
+E:\Blog\back_end\Blog.Core.IRepository\obj\Debug\net8.0\Blog.Core.IRepository.csproj.CopyComplete

@@ -1,0 +1,325 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Blog\\back_end\\Blog.Core\\Blog.Core.csproj": {}
+  },
+  "projects": {
+    "E:\\Blog\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Blog\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj",
+        "projectName": "Blog.Core.IRepository",
+        "projectPath": "E:\\Blog\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj",
+        "packagesPath": "C:\\Users\\20712\\.nuget\\packages\\",
+        "outputPath": "E:\\Blog\\back_end\\Blog.Core.IRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\20712\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Blog\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Blog\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj",
+        "projectName": "Blog.Core.IServices",
+        "projectPath": "E:\\Blog\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj",
+        "packagesPath": "C:\\Users\\20712\\.nuget\\packages\\",
+        "outputPath": "E:\\Blog\\back_end\\Blog.Core.IServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\20712\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Blog\\back_end\\Blog.Core.Repository\\Blog.Core.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Blog\\back_end\\Blog.Core.Repository\\Blog.Core.Repository.csproj",
+        "projectName": "Blog.Core.Repository",
+        "projectPath": "E:\\Blog\\back_end\\Blog.Core.Repository\\Blog.Core.Repository.csproj",
+        "packagesPath": "C:\\Users\\20712\\.nuget\\packages\\",
+        "outputPath": "E:\\Blog\\back_end\\Blog.Core.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\20712\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\Blog\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj": {
+                "projectPath": "E:\\Blog\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Blog\\back_end\\Blog.Core.Services\\Blog.Core.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Blog\\back_end\\Blog.Core.Services\\Blog.Core.Services.csproj",
+        "projectName": "Blog.Core.Services",
+        "projectPath": "E:\\Blog\\back_end\\Blog.Core.Services\\Blog.Core.Services.csproj",
+        "packagesPath": "C:\\Users\\20712\\.nuget\\packages\\",
+        "outputPath": "E:\\Blog\\back_end\\Blog.Core.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\20712\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\Blog\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj": {
+                "projectPath": "E:\\Blog\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj"
+              },
+              "E:\\Blog\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj": {
+                "projectPath": "E:\\Blog\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj"
+              },
+              "E:\\Blog\\back_end\\Blog.Core.Repository\\Blog.Core.Repository.csproj": {
+                "projectPath": "E:\\Blog\\back_end\\Blog.Core.Repository\\Blog.Core.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Blog\\back_end\\Blog.Core\\Blog.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Blog\\back_end\\Blog.Core\\Blog.Core.csproj",
+        "projectName": "Blog.Core",
+        "projectPath": "E:\\Blog\\back_end\\Blog.Core\\Blog.Core.csproj",
+        "packagesPath": "C:\\Users\\20712\\.nuget\\packages\\",
+        "outputPath": "E:\\Blog\\back_end\\Blog.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\20712\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\Blog\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj": {
+                "projectPath": "E:\\Blog\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj"
+              },
+              "E:\\Blog\\back_end\\Blog.Core.Services\\Blog.Core.Services.csproj": {
+                "projectPath": "E:\\Blog\\back_end\\Blog.Core.Services\\Blog.Core.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "microsoft.openapi": {
+              "target": "Package",
+              "version": "[1.6.15, )"
+            },
+            "swagger": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
