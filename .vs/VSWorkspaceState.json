@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\back_end",
-    "\\back_end\\Blog.Core.Services",
-    "\\back_end\\Blog.Core.Services\\postgresql"
+    "\\back_end\\Blog.Core",
+    "\\back_end\\Blog.Core.Services"
   ],
-  "SelectedNode": "\\back_end\\Blog.Core.Services",
+  "SelectedNode": "\\back_end\\Blog.Core",
   "PreviewInSolutionExplorer": false
 }

@@ -9,11 +9,13 @@
 
 ## Blog.Core.Repository : 管理数据持久层
 
+在该文件中有一个BaseRepository类,该类是所有仓储层的基类,里面封装了增删改查等操作,用来减少重复代码
+
 repository表示仓库管理层,领域层需要什么东西只要向仓储层要,仓储层会提供接口给领域层使用,而仓储层需要的东西则是去数据层拿
 
 ## Blog.Core.IRepository : 提供所有仓储层的接口
 
-# Blog.CoreIServices和Blog.CoreServices : 业务逻辑层
+# Blog.CoreIServices和Blog.CoreServices : 业务逻辑层(保护数据)
 
 领域层是老板但是老板不能直接去仓库找管理员说要什么吧。所以在仓储层之上又有一个业务层对老板服务
 

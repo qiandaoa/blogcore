@@ -766,7 +766,8 @@
     "net8.0": [
       "Blog.Core.FrameWork >= 1.0.0",
       "Blog.Core.IRepository >= 1.0.0",
-      "Blog.Core.Model >= 1.0.0"
+      "Blog.Core.Model >= 1.0.0",
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.4"
     ]
   },
   "packageFolders": {
@@ -817,6 +818,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "target": "Package",
+            "version": "[8.0.4, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

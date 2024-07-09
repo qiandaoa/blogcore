@@ -2620,7 +2620,8 @@
         "dependencies": {
           "Blog.Core.FrameWork": "1.0.0",
           "Blog.Core.IRepository": "1.0.0",
-          "Blog.Core.Model": "1.0.0"
+          "Blog.Core.Model": "1.0.0",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4"
         },
         "compile": {
           "bin/placeholder/Blog.Core.Repository.dll": {}

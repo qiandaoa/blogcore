@@ -1,5 +1,4 @@
 using Blog.Core.IServices;
-using Blog.Core.Model.Models;
 using Blog.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,20 +10,9 @@ namespace Blog.Core.Conterllers
     [Route("[controller]")]
     public class BlogController : ControllerBase
     {
-        private readonly IAdvertisementServices _ad;
-        public BlogController(IAdvertisementServices advertisementServices)
+
+        public BlogController()
         {
-            _ad = advertisementServices;
-        }
-        [HttpGet]
-        public int Get(int i,int j)
-        {
-            return _ad.Sum(i,j);
-        }
-        [HttpGet("{id}")]
-        public List<Advertisement> Get(int id)
-        {
-            return _ad.Query(item=>item.Id==id).ToList();
         }
     }
 }
