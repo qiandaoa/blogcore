@@ -46,6 +46,7 @@ namespace Blog.Core
             services.AddDbContext<BlogDbContext>(optinos=>{
                 optinos.UseNpgsql(Configuration.GetConnectionString("psql"));
             });
+            services.AddScoped<AdvertisementRepository>();
             services.AddScoped(typeof(IAdvertisementServices), typeof(AdvertisementServices));
             services.AddScoped(typeof(IAdvertisementRepository), typeof(AdvertisementRepository));
         }
