@@ -9,7 +9,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.6" />
+    <PackageReference Include="microsoft.entityframeworkcore" Version="8.0.6" />
+    <PackageReference Include="microsoft.entityframeworkcore.design" Version="8.0.6">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="microsoft.openapi" Version="1.6.15" />
+    <PackageReference Include="Npgsql.entityframeworkcore.postgresql" Version="8.0.4" />
     <PackageReference Include="swagger" Version="1.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
@@ -17,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Blog.Core.IServices\Blog.Core.IServices.csproj" />
     <ProjectReference Include="..\Blog.Core.Services\Blog.Core.Services.csproj" />
+    <ProjectReference Include="..\Blog.Core.FrameWork\Blog.Core.FrameWork.csproj" />
   </ItemGroup>
 
 </Project>

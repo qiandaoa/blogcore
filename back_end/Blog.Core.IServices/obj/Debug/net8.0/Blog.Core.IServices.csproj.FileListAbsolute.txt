@@ -9,3 +9,7 @@ E:\Blog\back_end\Blog.Core.IServices\obj\Debug\net8.0\Blog.Core.IServices.dll
 E:\Blog\back_end\Blog.Core.IServices\obj\Debug\net8.0\refint\Blog.Core.IServices.dll
 E:\Blog\back_end\Blog.Core.IServices\obj\Debug\net8.0\Blog.Core.IServices.pdb
 E:\Blog\back_end\Blog.Core.IServices\obj\Debug\net8.0\ref\Blog.Core.IServices.dll
+E:\Blog\back_end\Blog.Core.IServices\bin\Debug\net8.0\Blog.Core.Model.dll
+E:\Blog\back_end\Blog.Core.IServices\bin\Debug\net8.0\Blog.Core.Model.pdb
+E:\Blog\back_end\Blog.Core.IServices\obj\Debug\net8.0\Blog.Core.IServices.csproj.AssemblyReference.cache
+E:\Blog\back_end\Blog.Core.IServices\obj\Debug\net8.0\Blog.Core.IServices.csproj.CopyComplete

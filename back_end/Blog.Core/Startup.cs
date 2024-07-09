@@ -1,5 +1,10 @@
+using Blog.Core.FrameWork;
+using Blog.Core.IRepository;
+using Blog.Core.IServices;
+using Blog.Core.Repository;
+using Blog.Core.Services;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.Swagger;
 
 namespace Blog.Core
 {
@@ -38,6 +43,11 @@ namespace Blog.Core
                     TermsOfService = new Uri("https://example.com/terms"),
                 });
             });
+            services.AddDbContext<BlogDbContext>(optinos=>{
+                optinos.UseNpgsql(Configuration.GetConnectionString("psql"));
+            });
+            services.AddScoped(typeof(IAdvertisementServices), typeof(AdvertisementServices));
+            services.AddScoped(typeof(IAdvertisementRepository), typeof(AdvertisementRepository));
         }
     }
 }

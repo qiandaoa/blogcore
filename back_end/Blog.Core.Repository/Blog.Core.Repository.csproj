@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Blog.Core.IRepository\Blog.Core.IRepository.csproj" />
     <ProjectReference Include="..\Blog.Core.Model\Blog.Core.Model.csproj" />
+    <ProjectReference Include="..\Blog.Core.FrameWork\Blog.Core.FrameWork.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

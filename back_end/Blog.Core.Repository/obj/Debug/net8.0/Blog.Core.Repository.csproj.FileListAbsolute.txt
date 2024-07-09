@@ -15,3 +15,5 @@ E:\Blog\back_end\Blog.Core.Repository\obj\Debug\net8.0\Blog.Core.Repository.pdb
 E:\Blog\back_end\Blog.Core.Repository\obj\Debug\net8.0\ref\Blog.Core.Repository.dll
 E:\Blog\back_end\Blog.Core.Repository\bin\Debug\net8.0\Blog.Core.Model.dll
 E:\Blog\back_end\Blog.Core.Repository\bin\Debug\net8.0\Blog.Core.Model.pdb
+E:\Blog\back_end\Blog.Core.Repository\bin\Debug\net8.0\Blog.Core.FrameWork.dll
+E:\Blog\back_end\Blog.Core.Repository\bin\Debug\net8.0\Blog.Core.FrameWork.pdb
