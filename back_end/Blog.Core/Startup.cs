@@ -56,6 +56,7 @@ namespace Blog.Core
                         {
                             Reference = new OpenApiReference
                             {
+
                                 Type = ReferenceType.SecurityScheme,
                                 Id = "Bearer"
                             }
@@ -87,7 +88,10 @@ namespace Blog.Core
         {
             #region Swagger
             app.UseSwagger();
-            app.UseSwaggerUI();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiHelp V1");
+            });
             #endregion
             app.UseMiddleware<TokenAuth>(); // 表示在http请求中处理http请求的一个中间件
             app.UseRouting();

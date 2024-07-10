@@ -1,0 +1,132 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Blog.Core.IRepository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Blog.Core.IRepository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blog.Core.IRepository.dll": {}
+        }
+      },
+      "Blog.Core.IServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Blog.Core.IServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blog.Core.IServices.dll": {}
+        }
+      },
+      "Blog.Core.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Blog.Core.IRepository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Blog.Core.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blog.Core.Repository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Blog.Core.IRepository/1.0.0": {
+      "type": "project",
+      "path": "../Blog.Core.IRepository/Blog.Core.IRepository.csproj",
+      "msbuildProject": "../Blog.Core.IRepository/Blog.Core.IRepository.csproj"
+    },
+    "Blog.Core.IServices/1.0.0": {
+      "type": "project",
+      "path": "../Blog.Core.IServices/Blog.Core.IServices.csproj",
+      "msbuildProject": "../Blog.Core.IServices/Blog.Core.IServices.csproj"
+    },
+    "Blog.Core.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Blog.Core.Repository/Blog.Core.Repository.csproj",
+      "msbuildProject": "../Blog.Core.Repository/Blog.Core.Repository.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Blog.Core.IRepository >= 1.0.0",
+      "Blog.Core.IServices >= 1.0.0",
+      "Blog.Core.Repository >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\20712\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Services\\Blog.Core.Services.csproj",
+      "projectName": "Blog.Core.Services",
+      "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Services\\Blog.Core.Services.csproj",
+      "packagesPath": "C:\\Users\\20712\\.nuget\\packages\\",
+      "outputPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Services\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\20712\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj": {
+              "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj"
+            },
+            "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj": {
+              "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj"
+            },
+            "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Repository\\Blog.Core.Repository.csproj": {
+              "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Repository\\Blog.Core.Repository.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

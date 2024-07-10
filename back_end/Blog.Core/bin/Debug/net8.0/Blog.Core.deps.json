@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v8.0": {
       "Blog.Core/1.0.0": {
         "dependencies": {
+          "Blog.Core.IServices": "1.0.0",
           "Blog.Core.Model": "1.0.0",
+          "Blog.Core.Services": "1.0.0",
           "Blog.Core.Token": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.7",
           "Microsoft.AspNetCore.OpenApi": "8.0.7",
@@ -302,9 +304,37 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "Blog.Core.IRepository/1.0.0": {
+        "runtime": {
+          "Blog.Core.IRepository.dll": {}
+        }
+      },
+      "Blog.Core.IServices/1.0.0": {
+        "runtime": {
+          "Blog.Core.IServices.dll": {}
+        }
+      },
       "Blog.Core.Model/1.0.0": {
         "runtime": {
           "Blog.Core.Model.dll": {}
+        }
+      },
+      "Blog.Core.Repository/1.0.0": {
+        "dependencies": {
+          "Blog.Core.IRepository": "1.0.0"
+        },
+        "runtime": {
+          "Blog.Core.Repository.dll": {}
+        }
+      },
+      "Blog.Core.Services/1.0.0": {
+        "dependencies": {
+          "Blog.Core.IRepository": "1.0.0",
+          "Blog.Core.IServices": "1.0.0",
+          "Blog.Core.Repository": "1.0.0"
+        },
+        "runtime": {
+          "Blog.Core.Services.dll": {}
         }
       },
       "Blog.Core.Token/1.0.0": {
@@ -585,7 +615,27 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
+    "Blog.Core.IRepository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Blog.Core.IServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Blog.Core.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Blog.Core.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Blog.Core.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

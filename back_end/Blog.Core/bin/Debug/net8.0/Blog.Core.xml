@@ -19,6 +19,14 @@
             post
             </summary>
         </member>
+        <member name="M:Blog.Core.Controllers.BlogController.Get(System.Int32,System.Int32)">
+            <summary>
+            Sum接口
+            </summary>
+            <param name="i">参数i</param>
+            <param name="j">参数j</param>
+            <returns></returns>
+        </member>
         <member name="M:Blog.Core.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
             <summary>
             构造函数

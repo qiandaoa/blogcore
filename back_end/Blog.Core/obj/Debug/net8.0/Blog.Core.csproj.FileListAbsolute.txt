@@ -46,3 +46,11 @@ E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Blog.Core.Token
 E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Blog.Core.IRepository.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Blog.Core.IServices.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Blog.Core.Repository.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Blog.Core.Services.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Blog.Core.IServices.pdb
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Blog.Core.Services.pdb
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Blog.Core.IRepository.pdb
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Blog.Core.Repository.pdb
