@@ -1,210 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Blog\\back_end\\Blog.Core\\Blog.Core.csproj": {}
+    "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core\\Blog.Core.csproj": {}
   },
   "projects": {
-    "E:\\Blog\\back_end\\Blog.Core.FrameWork\\Blog.Core.FrameWork.csproj": {
+    "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Blog\\back_end\\Blog.Core.FrameWork\\Blog.Core.FrameWork.csproj",
-        "projectName": "Blog.Core.FrameWork",
-        "projectPath": "E:\\Blog\\back_end\\Blog.Core.FrameWork\\Blog.Core.FrameWork.csproj",
-        "packagesPath": "C:\\Users\\20712\\.nuget\\packages\\",
-        "outputPath": "E:\\Blog\\back_end\\Blog.Core.FrameWork\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\20712\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj": {
-                "projectPath": "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[8.0.4, )"
-            },
-            "microsoft.entityframeworkcore": {
-              "target": "Package",
-              "version": "[8.0.6, )"
-            },
-            "microsoft.entityframeworkcore.design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.6, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\Blog\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\Blog\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj",
-        "projectName": "Blog.Core.IRepository",
-        "projectPath": "E:\\Blog\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj",
-        "packagesPath": "C:\\Users\\20712\\.nuget\\packages\\",
-        "outputPath": "E:\\Blog\\back_end\\Blog.Core.IRepository\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\20712\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj": {
-                "projectPath": "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\Blog\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\Blog\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj",
-        "projectName": "Blog.Core.IServices",
-        "projectPath": "E:\\Blog\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj",
-        "packagesPath": "C:\\Users\\20712\\.nuget\\packages\\",
-        "outputPath": "E:\\Blog\\back_end\\Blog.Core.IServices\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\20712\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj": {
-                "projectPath": "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj",
+        "projectUniqueName": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj",
         "projectName": "Blog.Core.Model",
-        "projectPath": "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj",
+        "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj",
         "packagesPath": "C:\\Users\\20712\\.nuget\\packages\\",
-        "outputPath": "E:\\Blog\\back_end\\Blog.Core.Model\\obj\\",
+        "outputPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\20712\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -252,14 +59,14 @@
         }
       }
     },
-    "E:\\Blog\\back_end\\Blog.Core.Repository\\Blog.Core.Repository.csproj": {
+    "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Token\\Blog.Core.Token.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Blog\\back_end\\Blog.Core.Repository\\Blog.Core.Repository.csproj",
-        "projectName": "Blog.Core.Repository",
-        "projectPath": "E:\\Blog\\back_end\\Blog.Core.Repository\\Blog.Core.Repository.csproj",
+        "projectUniqueName": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Token\\Blog.Core.Token.csproj",
+        "projectName": "Blog.Core.Token",
+        "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Token\\Blog.Core.Token.csproj",
         "packagesPath": "C:\\Users\\20712\\.nuget\\packages\\",
-        "outputPath": "E:\\Blog\\back_end\\Blog.Core.Repository\\obj\\",
+        "outputPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Token\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\20712\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -275,17 +82,7 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {
-              "E:\\Blog\\back_end\\Blog.Core.FrameWork\\Blog.Core.FrameWork.csproj": {
-                "projectPath": "E:\\Blog\\back_end\\Blog.Core.FrameWork\\Blog.Core.FrameWork.csproj"
-              },
-              "E:\\Blog\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj": {
-                "projectPath": "E:\\Blog\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj"
-              },
-              "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj": {
-                "projectPath": "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -298,86 +95,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "Microsoft.Extensions.Caching.Memory": {
               "target": "Package",
-              "version": "[8.0.4, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\Blog\\back_end\\Blog.Core.Services\\Blog.Core.Services.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\Blog\\back_end\\Blog.Core.Services\\Blog.Core.Services.csproj",
-        "projectName": "Blog.Core.Services",
-        "projectPath": "E:\\Blog\\back_end\\Blog.Core.Services\\Blog.Core.Services.csproj",
-        "packagesPath": "C:\\Users\\20712\\.nuget\\packages\\",
-        "outputPath": "E:\\Blog\\back_end\\Blog.Core.Services\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\20712\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "E:\\Blog\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj": {
-                "projectPath": "E:\\Blog\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj"
-              },
-              "E:\\Blog\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj": {
-                "projectPath": "E:\\Blog\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj"
-              },
-              "E:\\Blog\\back_end\\Blog.Core.Repository\\Blog.Core.Repository.csproj": {
-                "projectPath": "E:\\Blog\\back_end\\Blog.Core.Repository\\Blog.Core.Repository.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "microsoft.entityframeworkcore": {
-              "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.0, )"
             },
-            "microsoft.entityframeworkcore.design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[7.6.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.6.3, )"
+            },
+            "System.Security.Claims": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [
@@ -400,14 +132,14 @@
         }
       }
     },
-    "E:\\Blog\\back_end\\Blog.Core\\Blog.Core.csproj": {
+    "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core\\Blog.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Blog\\back_end\\Blog.Core\\Blog.Core.csproj",
+        "projectUniqueName": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core\\Blog.Core.csproj",
         "projectName": "Blog.Core",
-        "projectPath": "E:\\Blog\\back_end\\Blog.Core\\Blog.Core.csproj",
+        "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core\\Blog.Core.csproj",
         "packagesPath": "C:\\Users\\20712\\.nuget\\packages\\",
-        "outputPath": "E:\\Blog\\back_end\\Blog.Core\\obj\\",
+        "outputPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\20712\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -424,14 +156,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Blog\\back_end\\Blog.Core.FrameWork\\Blog.Core.FrameWork.csproj": {
-                "projectPath": "E:\\Blog\\back_end\\Blog.Core.FrameWork\\Blog.Core.FrameWork.csproj"
+              "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj": {
+                "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj"
               },
-              "E:\\Blog\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj": {
-                "projectPath": "E:\\Blog\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj"
-              },
-              "E:\\Blog\\back_end\\Blog.Core.Services\\Blog.Core.Services.csproj": {
-                "projectPath": "E:\\Blog\\back_end\\Blog.Core.Services\\Blog.Core.Services.csproj"
+              "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Token\\Blog.Core.Token.csproj": {
+                "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Token\\Blog.Core.Token.csproj"
               }
             }
           }
@@ -446,35 +175,25 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
-            "Npgsql.entityframeworkcore.postgresql": {
+            "Microsoft.Extensions.Configuration.Binder": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.6.2, )"
             },
-            "microsoft.entityframeworkcore": {
+            "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
-              "version": "[8.0.6, )"
-            },
-            "microsoft.entityframeworkcore.design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.6, )"
-            },
-            "microsoft.openapi": {
-              "target": "Package",
-              "version": "[1.6.15, )"
-            },
-            "swagger": {
-              "target": "Package",
-              "version": "[1.0.0, )"
+              "version": "[6.6.2, )"
             }
           },
           "imports": [

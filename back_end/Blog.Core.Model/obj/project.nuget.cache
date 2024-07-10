@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PFELmuIcaiSAbKC6M85NXXQYfxiJxBXMfA3vN8dNagFMf1ipNsTUA5p13LzGEGOcQkoqBIJmsUAABkUcd6LrCg==",
+  "dgSpecHash": "QT5RhaeYSR5RR1ZnZ0F6kphv8yp9iatYoVGvBCjhgWnR28m263qOydX0AS5flZrjgvZMhXMsJX5lMna69o4D1A==",
   "success": true,
-  "projectFilePath": "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj",
+  "projectFilePath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

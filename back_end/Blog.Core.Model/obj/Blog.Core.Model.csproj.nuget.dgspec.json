@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj": {}
+    "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj": {}
   },
   "projects": {
-    "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj": {
+    "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj",
+        "projectUniqueName": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj",
         "projectName": "Blog.Core.Model",
-        "projectPath": "E:\\Blog\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj",
+        "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj",
         "packagesPath": "C:\\Users\\20712\\.nuget\\packages\\",
-        "outputPath": "E:\\Blog\\back_end\\Blog.Core.Model\\obj\\",
+        "outputPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\20712\\AppData\\Roaming\\NuGet\\NuGet.Config",
