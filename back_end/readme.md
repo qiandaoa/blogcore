@@ -33,3 +33,15 @@ TokenAuth.cs: 表示中间件,用于验证
 
 > Blog.Core.Service和Blog.Core.IService:业务层
 
+## 三.使用SqlSugar ORM框架
+
+对比于Ef core会更加轻量和便捷，EF core会更加重型。
+
+1. 直接在Repository层中通过Nuget引入 sqlSugarCore，**一定是Core版本的**！
+
+使用教程:[SqlSugar .Net ORM 5.X 官网 、文档、教程 - SqlSugar 5x - .NET果糖网 (donet5.com)](https://www.donet5.com/Home/Doc)
+
+![image-20240711100142263](C:\Users\20712\AppData\Roaming\Typora\typora-user-images\image-20240711100142263.png)
+
+**长久考虑**:应该在项目后期将这个修改成为配置文件的形式
+

@@ -9,3 +9,8 @@ E:\Vue+Net后台管理系统\back_end\Blog.Core.IServices\obj\Debug\net8.0\Blog.
 E:\Vue+Net后台管理系统\back_end\Blog.Core.IServices\obj\Debug\net8.0\refint\Blog.Core.IServices.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core.IServices\obj\Debug\net8.0\Blog.Core.IServices.pdb
 E:\Vue+Net后台管理系统\back_end\Blog.Core.IServices\obj\Debug\net8.0\ref\Blog.Core.IServices.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core.IServices\bin\Debug\net8.0\Blog.Core.Model.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core.IServices\bin\Debug\net8.0\Blog.Core.Model.pdb
+E:\Vue+Net后台管理系统\back_end\Blog.Core.IServices\bin\Debug\net8.0\Blog.Core.Model.xml
+E:\Vue+Net后台管理系统\back_end\Blog.Core.IServices\obj\Debug\net8.0\Blog.Core.IServices.csproj.AssemblyReference.cache
+E:\Vue+Net后台管理系统\back_end\Blog.Core.IServices\obj\Debug\net8.0\Blog.Core.IServices.csproj.CopyComplete

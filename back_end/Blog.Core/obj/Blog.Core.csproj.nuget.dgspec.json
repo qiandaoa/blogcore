@@ -27,7 +27,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj": {
+                "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -82,7 +86,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj": {
+                "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -208,6 +216,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "SqlSugarCore": {
+              "target": "Package",
+              "version": "[5.1.4.160, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

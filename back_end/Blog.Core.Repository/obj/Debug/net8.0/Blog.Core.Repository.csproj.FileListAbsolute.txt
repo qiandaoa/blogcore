@@ -13,3 +13,6 @@ E:\Vue+Net后台管理系统\back_end\Blog.Core.Repository\obj\Debug\net8.0\Blog
 E:\Vue+Net后台管理系统\back_end\Blog.Core.Repository\obj\Debug\net8.0\refint\Blog.Core.Repository.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core.Repository\obj\Debug\net8.0\Blog.Core.Repository.pdb
 E:\Vue+Net后台管理系统\back_end\Blog.Core.Repository\obj\Debug\net8.0\ref\Blog.Core.Repository.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core.Repository\bin\Debug\net8.0\Blog.Core.Model.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core.Repository\bin\Debug\net8.0\Blog.Core.Model.pdb
+E:\Vue+Net后台管理系统\back_end\Blog.Core.Repository\bin\Debug\net8.0\Blog.Core.Model.xml

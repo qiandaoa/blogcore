@@ -1,5 +1,6 @@
 ﻿using Blog.Core.IServices;
 using Blog.Core.Model;
+using Blog.Core.Model.Models;
 using Blog.Core.Services;
 using Blog.Core.Token;
 using Blog.Core.Token.Model;
@@ -13,14 +14,16 @@ namespace Blog.Core.Controllers
     /// </summary>
     [Route("api/Blog")]
     [ApiController]
-    [Authorize(Policy = "Admin")]
+    //[Authorize(Policy = "Admin")]
     public class BlogController : Controller
     {
+
         // GET : api/blog/5
         [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        public List<Advertisement> Get(int id)
         {
-            return "value";
+            IAdvertisementServices advertisementServices = new AdvertisementServices();
+            return advertisementServices.Query(d=>d.Id == id);
         }
         [HttpPost]
         public void Post(string value)
