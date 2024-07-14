@@ -4,44 +4,30 @@
 
 Swagger是一个书写API文档的框架
 
-## JWT的权限验证
-
-TokenModel.cs:用于存放用户信息
-
-BlogMemoryCache.cs：用于表示对系统缓存的操作
-
-BlogToken.cs：用于生成jwt
-
-TokenAuth.cs: 表示中间件,用于验证
-
-![](https://images2018.cnblogs.com/blog/1468246/201809/1468246-20180904113555931-616143177.png)
-
 ## 二.对项目框架的搭建
 
 > Blog.Core: 表示对外暴露的API层
->
+
+- ServiceProvider: 用于封装Swagger和Cors
+
+- Data:用来封装数据库上下文,使用efcore作为orm框架
+
+  连接数据库,采用的是代码先行
+
+  > dotnet ef migrations add one --project .\Blog.Core\ 生成迁移文件
+
+  > dotnet ef update database --project .\Blog.Core\ 生成数据表
+
 > Blog.Core.Model:表示对核心实体层
 
 - Models文件夹中，存放的是整个项目的数据库表实体类
 - VeiwModels文件夹，是存放的DTO实体类，在开发中，一般接口需要接收数据，返回数据
 
-> Blog.Core.Token：对jwt的颁发,属于一个独立项目
->
 > Blog.Core.Repository和Blog.Core.IRepository:仓储层
 
 **Repository 是仓库管理员，领域层需要什么东西只需告诉仓库管理员，由仓库管理员把东西拿给它，并不需要知道东西实际放在哪。**
 
 > Blog.Core.Service和Blog.Core.IService:业务层
 
-## 三.使用SqlSugar ORM框架
 
-对比于Ef core会更加轻量和便捷，EF core会更加重型。
-
-1. 直接在Repository层中通过Nuget引入 sqlSugarCore，**一定是Core版本的**！
-
-使用教程:[SqlSugar .Net ORM 5.X 官网 、文档、教程 - SqlSugar 5x - .NET果糖网 (donet5.com)](https://www.donet5.com/Home/Doc)
-
-![image-20240711100142263](C:\Users\20712\AppData\Roaming\Typora\typora-user-images\image-20240711100142263.png)
-
-**长久考虑**:应该在项目后期将这个修改成为配置文件的形式
 

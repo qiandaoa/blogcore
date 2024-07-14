@@ -14,3 +14,5 @@ E:\Vue+Net后台管理系统\back_end\Blog.Core.IRepository\bin\Debug\net8.0\Blo
 E:\Vue+Net后台管理系统\back_end\Blog.Core.IRepository\bin\Debug\net8.0\Blog.Core.Model.xml
 E:\Vue+Net后台管理系统\back_end\Blog.Core.IRepository\obj\Debug\net8.0\Blog.Core.IRepository.csproj.AssemblyReference.cache
 E:\Vue+Net后台管理系统\back_end\Blog.Core.IRepository\obj\Debug\net8.0\Blog.Core.IRepository.csproj.CopyComplete
+E:\Vue+Net后台管理系统\back_end\Blog.Core.IRepository\bin\Debug\net8.0\Blog.Core.IRepository.runtimeconfig.json
+E:\Vue+Net后台管理系统\back_end\Blog.Core.IRepository\obj\Debug\net8.0\Blog.Core.IRepository.genruntimeconfig.cache

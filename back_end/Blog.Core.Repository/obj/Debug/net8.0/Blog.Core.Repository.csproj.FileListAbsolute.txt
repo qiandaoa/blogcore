@@ -16,3 +16,5 @@ E:\Vue+Net后台管理系统\back_end\Blog.Core.Repository\obj\Debug\net8.0\ref\
 E:\Vue+Net后台管理系统\back_end\Blog.Core.Repository\bin\Debug\net8.0\Blog.Core.Model.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core.Repository\bin\Debug\net8.0\Blog.Core.Model.pdb
 E:\Vue+Net后台管理系统\back_end\Blog.Core.Repository\bin\Debug\net8.0\Blog.Core.Model.xml
+E:\Vue+Net后台管理系统\back_end\Blog.Core.Repository\bin\Debug\net8.0\Blog.Core.Repository.runtimeconfig.json
+E:\Vue+Net后台管理系统\back_end\Blog.Core.Repository\obj\Debug\net8.0\Blog.Core.Repository.genruntimeconfig.cache
