@@ -6,7 +6,7 @@
     <members>
         <member name="T:Blog.Core.Model.MessageModel`1">
             <summary>
-            通用返回信息 类
+            通用返回信息类
             </summary>
             <typeparam name="T"></typeparam>
         </member>

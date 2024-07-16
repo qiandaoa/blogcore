@@ -1,0 +1,43 @@
+// axios.get("url",{请求体}).then().catch() 简化axios
+import axios from "axios"
+
+var root = "后端接口地址"
+function toType(obj) {
+    return ({}).toString
+}
+
+
+// ({}) : 表示空对象,method:方法名(get，post,put,delete)，url(除了root后面的路径)，params(向api发送的数据),success成功,failure失败
+
+// axios({
+//     method: 'post',
+//     url: '/user/12345',
+//     params: {
+//          id: 123,
+//          name: 'John'
+//      }   https://example.com/api/users?id=123&name=Joh相当于id=123&name=Joh
+//     data: {
+//         firstName: 'Fred',
+//         lastName: 'Flintstone'
+//     },
+//     baseURL: 'https://some-domain.com/api/',
+//
+// });
+// 封住axios的方法
+function apiAxios (method,url,params,success,failure)
+{
+    if (params) {
+        params = filterNull(params); //上面定义的方法
+    }
+    axios({
+        method:method,// get,post,delete,put
+        url:root+url, // 请求地址
+        data:method === 'POST' || method === 'PUT' ? params : null, // 如果请求方法是post或者put，则将params作为data params:method === 'GET' || method === 'DELETE' ? params : null, // 如果请求方法是get或者delete，则将params作为params
+    }).then(res=>{
+        if (res.data.success === true) {
+            success(res.data);
+        }else{
+            failure(res.data);
+        }
+    })
+}

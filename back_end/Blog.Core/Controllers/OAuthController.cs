@@ -1,31 +1,41 @@
-﻿using Blog.Core.Dto;
-using Blog.Core.ServiceProvider;
-using Microsoft.AspNetCore.Authorization;
+﻿using Blog.Core.Extension.JWT;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Text;
+using Microsoft.Extensions.Configuration;
+using static Blog.Core.Extension.JWT.JwtHelper;
 
 namespace Blog.Core.Controllers
 {
-    [Authorize]
+    
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class OAuthController : ControllerBase
     {
-        [HttpPost]
-        [AllowAnonymous]
-        public IActionResult Authenticate(string name, string password)
+        public IConfiguration Configuration { get; set; }
+        public OAuthController(IConfiguration configuration)
         {
-            var user = new UserProviderDto(name, password);
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(Const.SecurityKey);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Audience = Audiences.UpdateAudience(user.Name),
-                Subject = user.GetClaimsIdentity()
-                Expires  = DateTime.UtcNow.AddDays(0.5)
-            };
+            Configuration = configuration;
         }
+        [HttpGet]
+        public async Task<object> GetJwtStr()
+        {
+            TokenModelJwt tokenModel = new TokenModelJwt { Uid=1,Role="Admin"};
+            var jwt = IssueJwt(tokenModel, Configuration); // 调用生成token令牌
+            return Ok(jwt);
+        }
+        [HttpGet("/one")]
+        public async Task<object> GetJwtStr(string name, string pass)
+        {
+            // 将用户id和角色名，作为单独的自定义变量封装进 token 字符串中。
+            TokenModelJwt tokenModel = new TokenModelJwt { Uid = 1, Role = "Admin" };
+            var jwtStr = IssueJwt(tokenModel, Configuration);//登录，获取到一定规则的 Token 令牌
+            var suc = true;
+            return Ok(new
+            {
+                success = suc,
+                token = jwtStr
+            });
+        }
+
     }
 }

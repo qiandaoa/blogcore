@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Blog.Core.Model
 {
     /// <summary>
-    /// 通用返回信息 类
+    /// 通用返回信息类
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class MessageModel<T>
