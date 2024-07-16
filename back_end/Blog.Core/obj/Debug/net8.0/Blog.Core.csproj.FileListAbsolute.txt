@@ -28,6 +28,7 @@ E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Microsoft.Ident
 E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Microsoft.OpenApi.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Newtonsoft.Json.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Npgsql.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -119,10 +120,15 @@ E:\Vue+Net后台管理系统\back_end\Blog.Core\obj\Debug\net8.0\staticwebassets
 E:\Vue+Net后台管理系统\back_end\Blog.Core\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Blog.Core.props
 E:\Vue+Net后台管理系统\back_end\Blog.Core\obj\Debug\net8.0\staticwebassets.pack.json
 E:\Vue+Net后台管理系统\back_end\Blog.Core\obj\Debug\net8.0\scopedcss\bundle\Blog.Core.styles.css
+E:\Vue+Net后台管理系统\back_end\Blog.Core\obj\Debug\net8.0\Blog.Core.csproj.CopyComplete
 E:\Vue+Net后台管理系统\back_end\Blog.Core\obj\Debug\net8.0\Blog.Core.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core\obj\Debug\net8.0\refint\Blog.Core.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core\obj\Debug\net8.0\Blog.Core.pdb
 E:\Vue+Net后台管理系统\back_end\Blog.Core\obj\Debug\net8.0\Blog.Core.genruntimeconfig.cache
 E:\Vue+Net后台管理系统\back_end\Blog.Core\obj\Debug\net8.0\ref\Blog.Core.dll
-E:\Vue+Net后台管理系统\back_end\Blog.Core\obj\Debug\net8.0\Blog.Core.csproj.CopyComplete
-E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Vue+Net后台管理系统\back_end\Blog.Core\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

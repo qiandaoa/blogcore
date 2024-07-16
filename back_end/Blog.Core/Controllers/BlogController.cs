@@ -7,7 +7,7 @@ namespace Blog.Core.Controllers
 {
     [Produces("application/json")]
     [Route("api/Blog")]
-    [Authorize(Policy = "Admin")]
+    [Authorize(Roles = "Admin")]
     public class BlogController : Controller
     {
         // GET: api/Blog

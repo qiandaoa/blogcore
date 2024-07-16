@@ -176,6 +176,9 @@
             "projectReferences": {
               "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj": {
                 "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.IRepository\\Blog.Core.IRepository.csproj"
+              },
+              "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj": {
+                "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Model\\Blog.Core.Model.csproj"
               }
             }
           }
@@ -189,6 +192,26 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
