@@ -336,9 +336,6 @@
               },
               "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj": {
                 "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.IServices\\Blog.Core.IServices.csproj"
-              },
-              "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Repository\\Blog.Core.Repository.csproj": {
-                "projectPath": "E:\\Vue+Net后台管理系统\\back_end\\Blog.Core.Repository\\Blog.Core.Repository.csproj"
               }
             }
           }
@@ -440,6 +437,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Autofac.Extras.DynamicProxy": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.7, )"

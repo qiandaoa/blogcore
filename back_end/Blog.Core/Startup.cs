@@ -1,7 +1,11 @@
-﻿using Blog.Core.Extension;
+﻿using Autofac;
+using Autofac.Core;
+using Autofac.Extensions.DependencyInjection;
+using Blog.Core.Extension;
 using Blog.Core.Extension.JWT;
 using Blog.Core.Repository.EFCore;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 namespace Blog.Core
 {
@@ -12,13 +16,22 @@ namespace Blog.Core
         {
             Configuration = configuration;
         }
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            // 注册要通过的反射创建的组件
+            // builder.RegisterType<实现类>().As<接口>();
+            // 将整个服务程序集经行注入(未解耦)
+            var assemblysServices = Assembly.Load("Blog.Core.Services"); // 这里注入的必须要是实现类 Load解决方案名称
+            builder.RegisterAssemblyTypes(assemblysServices).AsImplementedInterfaces(); // 扫描整个程序集为提供所有其实现的接口
+            var assemblysRepository = Assembly.Load("Blog.Core.Repository");
+            builder.RegisterAssemblyTypes(assemblysRepository).AsImplementedInterfaces();
+        }
         // 用于注册服务
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<BlogContext>(item => 
             {
-                item.UseNpgsql(File.ReadAllText(@"E:\GitU盘\连接数据库\BlogConnect.txt"), //采用读取本地文件的形式,因为源码开源(所以不能让访客看到服务器密码) 
-                    b => b.MigrationsAssembly("Blog.Core")); // 指定迁移文件生成路径
+                item.UseNpgsql(File.ReadAllText(@"E:\GitU盘\连接数据库\BlogConnect.txt"));//采用读取本地文件的形式,因为源码开源(所以不能让访客看到服务器密码) 
             });
             services.AddCORS(); // 注册cors到容器中
             services.AddMvc(); // 注册MVC到Container "Container"通常指的是依赖注入容器，也称为 IoC 容器    

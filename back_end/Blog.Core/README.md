@@ -9,3 +9,9 @@
 # XML文件夹
 
 存放XML文件，是对Swagger的注释经行存放
+
+
+# Autofac依赖注入
+1. 要引用两个包 : Autofac.Extras.DynamicProxy 、 Autofac.Extensions.DependencyInjection
+
+2. 让Autofac接管ConfigureServices 修改返回类型IServiceProvider 

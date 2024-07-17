@@ -4,10 +4,8 @@ E:\Vue+Net后台管理系统\back_end\Blog.Core.Services\bin\Debug\net8.0\Blog.C
 E:\Vue+Net后台管理系统\back_end\Blog.Core.Services\bin\Debug\net8.0\Blog.Core.IRepository.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core.Services\bin\Debug\net8.0\Blog.Core.IServices.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core.Services\bin\Debug\net8.0\Blog.Core.Model.dll
-E:\Vue+Net后台管理系统\back_end\Blog.Core.Services\bin\Debug\net8.0\Blog.Core.Repository.dll
 E:\Vue+Net后台管理系统\back_end\Blog.Core.Services\bin\Debug\net8.0\Blog.Core.IRepository.pdb
 E:\Vue+Net后台管理系统\back_end\Blog.Core.Services\bin\Debug\net8.0\Blog.Core.IServices.pdb
-E:\Vue+Net后台管理系统\back_end\Blog.Core.Services\bin\Debug\net8.0\Blog.Core.Repository.pdb
 E:\Vue+Net后台管理系统\back_end\Blog.Core.Services\bin\Debug\net8.0\Blog.Core.Model.pdb
 E:\Vue+Net后台管理系统\back_end\Blog.Core.Services\bin\Debug\net8.0\Blog.Core.Model.xml
 E:\Vue+Net后台管理系统\back_end\Blog.Core.Services\obj\Debug\net8.0\Blog.Core.Services.csproj.AssemblyReference.cache

@@ -1,13 +1,12 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace Blog.Core.Migrations
+namespace Blog.Core.Repository.Migrations
 {
     /// <inheritdoc />
-    public partial class One : Migration
+    public partial class Init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,17 +15,13 @@ namespace Blog.Core.Migrations
                 name: "Advertisement",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
+                    id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    ImgUrl = table.Column<string>(type: "text", nullable: false),
-                    Title = table.Column<string>(type: "text", nullable: false),
-                    Url = table.Column<string>(type: "text", nullable: false),
-                    Remark = table.Column<string>(type: "text", nullable: false),
-                    Createdate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                    Name = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Advertisement", x => x.Id);
+                    table.PrimaryKey("PK_Advertisement", x => x.id);
                 });
         }
 

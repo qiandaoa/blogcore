@@ -1,11 +1,12 @@
 ﻿using Blog.Core.Extension.JWT;
+using Blog.Core.IRepository.Base;
+using Blog.Core.Model.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using static Blog.Core.Extension.JWT.JwtHelper;
 
 namespace Blog.Core.Controllers
 {
-    
     //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
