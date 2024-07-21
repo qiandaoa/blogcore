@@ -1,16 +1,16 @@
-﻿using Blog.Core.IRepository.Base;
-using Blog.Core.Repository.EFCore;
+﻿using Blog.Core.EFCore;
+using Blog.Core.IRepository.Base;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 namespace Blog.Core.Repository.Base
 {
-    public class BaseRepository<T> : IBaseRepository<T> where T : class, new()
+    public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
-        private readonly BlogContext BlogContext;
+        private readonly BlogDbContext BlogContext;
         public DbSet<T> db;
         public int Save;
-        public BaseRepository(BlogContext blogContext)
+        public BaseRepository(BlogDbContext blogContext)
         {
             BlogContext = blogContext;
             db = BlogContext.Set<T>();
@@ -19,110 +19,66 @@ namespace Blog.Core.Repository.Base
         #region 查询
         public async Task<T> QueryByID(object objId)
         {
-            return await db.FindAsync(objId);
+            var entity = db.FindAsync(objId);
+            return await entity;
         }
-
-        public async Task<T> QueryByID(object objId, bool blnUseCache = false)
+        public async Task<List<T>> Query()
         {
-            throw new NotImplementedException();
+            var entity = db.ToListAsync();
+            return await entity;
         }
-
-        public Task<List<T>> QueryByIDs(object[] lstIds)
+        public async Task<List<T>> Query(Expression<Func<T, bool>> whereExpression)
         {
-            throw new Exception();
-        }
-        public Task<List<T>> Query()
-        {
-            return db.ToListAsync();
-        }
-
-        public Task<List<T>> Query(string strWhere)
-        {
-            if (string.IsNullOrEmpty(strWhere))
+            var query = db.AsQueryable();
+            if (whereExpression != null)
             {
-                throw new Exception();
+                query = query.Where(whereExpression);
             }
-            throw new Exception();
+            return await query.ToListAsync();
         }
-
-        public Task<List<T>> Query(Expression<Func<T, bool>> whereExpression)
+        public async Task<List<T>> Query(Expression<Func<T, bool>> whereExpression, Expression<Func<T, object>> orderByExpression, bool isAsc = true) 
         {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<T>> Query(Expression<Func<T, bool>> whereExpression, string strOrderByFileds)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<T>> Query(Expression<Func<T, bool>> whereExpression, Expression<Func<T, object>> orderByExpression, bool isAsc = true)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<T>> Query(string strWhere, string strOrderByFileds)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<T>> Query(Expression<Func<T, bool>> whereExpression, int intTop, string strOrderByFileds)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<T>> Query(string strWhere, int intTop, string strOrderByFileds)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<T>> Query(Expression<Func<T, bool>> whereExpression, int intPageIndex, int intPageSize, string strOrderByFileds)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<T>> Query(string strWhere, int intPageIndex, int intPageSize, string strOrderByFileds)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<T>> QueryPage(Expression<Func<T, bool>> whereExpression, int intPageIndex = 0, int intPageSize = 20, string strOrderByFileds = null)
-        {
-            throw new NotImplementedException();
+            var query = db.AsQueryable();
+            if (whereExpression != null)
+            {
+                query = query.Where(whereExpression);
+            }
+            if (orderByExpression != null)
+            {
+                query = isAsc ? query.OrderBy(orderByExpression) : query.OrderByDescending(orderByExpression);
+            }
+            return await query.ToListAsync();
         }
         #endregion
         #region 添加
         public async Task<int> Add(T model)
         {
-            await db.AddAsync(model);
-            return await BlogContext.SaveChangesAsync();
+            db.Add(model);
+            return Save;
         }
         #endregion
         #region 删除
+        public async Task<bool> DeleteById(object id)
+        {
+            var entity = db.Find(id);
+            db.Remove(entity);
+            return Save > 0;
+        }
         public async Task<bool> Delete(T model)
         {
             db.Remove(model);
             return Save > 0;
         }
-
-        public async Task<bool> DeleteById(object id)
-        {
-            var entity = await db.FindAsync(id);
-            if (entity == null)
-            {
-                return false;
-            }
-            db.Remove(entity);
-            return Save > 0;
-        }
-
         public async Task<bool> DeleteByIds(object[] ids)
         {
-            var entites = await db.FindAsync(ids);
-            if (entites == null)
+            foreach (var id in ids)
             {
-                return false;
+                var entity = db.Find(id);
+                if (entity != null)  
+                {
+                    db.Remove(entity);
+                }
             }
-            db.RemoveRange(entites);
             return Save > 0;
         }
         #endregion
@@ -131,14 +87,34 @@ namespace Blog.Core.Repository.Base
         {
             db.Update(model);
             return Save > 0;
-
         }
-         // 暂时写不出来
-        public Task<int> Update(Expression<Func<T, bool>> strWhere, Expression<Func<T, T>> entity)
-        {
-            throw new NotImplementedException();
-        }
-
         #endregion
+        #region 分页
+        public async Task<List<T>> GetPageAsync(int pageIndex, int pageSize, Expression<Func<T, bool>> strWhere, bool isAsc, Expression<Func<T, object>> orderByExpression)
+        {
+            if (pageIndex <= 0)
+            {
+                pageIndex = 1;
+            }
+            if (pageSize <= 0)
+            {
+                pageSize = 10;
+            }
+            var count = await db.CountAsync(strWhere);  // 获得所有信息的总数
+            int skip = (pageIndex - 1) * pageSize; // 计算要跳过的页数
+            int take = pageSize; // 获得要选择的一页要多少数量的数据
+            var query = db.AsQueryable();
+            if (strWhere != null)
+            {
+                query = query.Where(strWhere);
+            }
+            if (orderByExpression != null)
+            {
+                query = isAsc ? query.OrderBy(orderByExpression) : query.OrderByDescending(orderByExpression);
+            }
+            var result = query.Skip(skip).Take(take).ToList();
+            return result;
+        }
+        #endregion 
     }
 }

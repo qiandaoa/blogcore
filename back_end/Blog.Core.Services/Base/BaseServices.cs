@@ -3,106 +3,62 @@ using System.Linq.Expressions;
 
 namespace Blog.Core.Services.Base
 {
-    public class BaseServices<T> : IBaseRepository<T> where T : class, new()
+    public class BaseServices<T> : IBaseServices<T> where T : class
     {
-        public Task<int> Add(T model)
+        private readonly IBaseRepository<T> _baseRepository;
+        public BaseServices(IBaseRepository<T> baseRepository) 
         {
-            throw new NotImplementedException();
+            _baseRepository = baseRepository;
         }
-
-        public Task<bool> Delete(T model)
+        #region 查询
+        public async Task<T> QueryByID(object objId)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.QueryByID(objId);
         }
-
-        public Task<bool> DeleteById(object id)
+        public async Task<List<T>> Query()
         {
-            throw new NotImplementedException();
+            return await _baseRepository.Query();
         }
-
-        public Task<bool> DeleteByIds(object[] ids)
+        public async Task<List<T>> Query(Expression<Func<T, bool>> whereExpression)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.Query(whereExpression);
         }
-
-        public Task<List<T>> Query()
+        public async Task<List<T>> Query(Expression<Func<T, bool>> whereExpression, Expression<Func<T, object>> orderByExpression, bool isAsc = true)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.Query(whereExpression,orderByExpression,isAsc);
         }
-
-        public Task<List<T>> Query(string strWhere)
+        #endregion
+        #region 添加
+        public async Task<int> Add(T model)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.Add(model);
         }
-
-        public Task<List<T>> Query(Expression<Func<T, bool>> whereExpression)
+        #endregion
+        #region 删除
+        public async Task<bool> DeleteById(object id)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.DeleteById(id);
         }
-
-        public Task<List<T>> Query(Expression<Func<T, bool>> whereExpression, string strOrderByFileds)
+        public async Task<bool> Delete(T model)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.Delete(model);
         }
-
-        public Task<List<T>> Query(Expression<Func<T, bool>> whereExpression, Expression<Func<T, object>> orderByExpression, bool isAsc = true)
+        public async Task<bool> DeleteByIds(object[] ids)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.DeleteByIds(ids);
         }
-
-        public Task<List<T>> Query(string strWhere, string strOrderByFileds)
+        #endregion
+        #region 更新
+        public async Task<bool> Update(T model)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.Update(model);
         }
-
-        public Task<List<T>> Query(Expression<Func<T, bool>> whereExpression, int intTop, string strOrderByFileds)
+        #endregion
+        #region 分页
+        public async Task<List<T>> GetPageAsync(int pageIndex, int pageSize, Expression<Func<T, bool>> strWhere, bool isAsc, Expression<Func<T, object>> orderByExpression)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.GetPageAsync(pageIndex,pageSize,strWhere,isAsc,orderByExpression);
         }
-
-        public Task<List<T>> Query(string strWhere, int intTop, string strOrderByFileds)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<T>> Query(Expression<Func<T, bool>> whereExpression, int intPageIndex, int intPageSize, string strOrderByFileds)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<T>> Query(string strWhere, int intPageIndex, int intPageSize, string strOrderByFileds)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<T> QueryByID(object objId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<T> QueryByID(object objId, bool blnUseCache = false)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<T>> QueryByIDs(object[] lstIds)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<T>> QueryPage(Expression<Func<T, bool>> whereExpression, int intPageIndex = 0, int intPageSize = 20, string strOrderByFileds = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> Update(T model)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<int> Update(Expression<Func<T, bool>> strWhere, Expression<Func<T, T>> entity)
-        {
-            throw new NotImplementedException();
-        }
+        #endregion 
     }
 }
